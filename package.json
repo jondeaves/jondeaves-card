@@ -1,0 +1,40 @@
+{
+  "name": "jondeaves",
+  "version": "1.0.0",
+  "description": "A personal card for Jon Deaves <hello@jondeaves.me>",
+  "main": "/bin/card.js",
+  "bin": {
+    "jondeaves": "./bin/card.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jondeaves/jondeaves-card.git"
+  },
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "node build.js",
+    "dev": "npm run build && node ./bin/card.js",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "card",
+    "npm",
+    "npm card",
+    "npx",
+    "npx card",
+    "business card"
+  ],
+  "author": "Jon Deaves <hello@jondeaves.me> (https://jondeaves.me)",
+  "license": "MIT",
+  "files": [
+    "bin/card.js",
+    "bin/output"
+  ],
+  "devDependencies": {
+    "boxen": "^2.1.0",
+    "chalk": "^2.4.1",
+    "semantic-release-cli": "~4.1.0",
+    "standard": "^12.0.1"
+  }
+}
