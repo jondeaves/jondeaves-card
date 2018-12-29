@@ -20,7 +20,7 @@ const data = {
   name: chalk.white('               Jon Deaves'),
   handle: chalk.white(username),
   work: chalk.white(`Software Developer at ${chalk.blue('FanDuel')}`),
-  npm: chalk.gray('https://npmjs.com/') + chalk.green(username),
+  npm: chalk.gray('https://npmjs.com/') + chalk.green(`~${username}`),
   github: chalk.gray('https://github.com/') + chalk.green(username),
   linkedin: chalk.gray('https://linkedin.com/in/') + chalk.green(username),
   web: chalk.cyan('https://jondeaves.me/'),
