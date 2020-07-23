@@ -1,6 +1,6 @@
 {
   "name": "jondeaves",
-  "version": "0.0.0-development",
+  "version": "1.0.1",
   "description": "A personal card for Jon Deaves <hello@jondeaves.me>",
   "main": "/bin/card.js",
   "bin": {
@@ -14,8 +14,7 @@
     "prepublish": "npm run build",
     "build": "node build.js",
     "dev": "npm run build && node ./bin/card.js",
-    "lint": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "semistandard",
     "semantic-release": "semantic-release"
   },
   "keywords": [
@@ -33,11 +32,8 @@
     "bin/output"
   ],
   "devDependencies": {
-    "@semantic-release/changelog": "~3.0.2",
-    "boxen": "^2.1.0",
-    "chalk": "^2.4.1",
-    "semantic-release": "^15.13.2",
-    "semantic-release-cli": "~4.1.0",
-    "standard": "^12.0.1"
+    "boxen": "^4.2.0",
+    "chalk": "^4.1.0",
+    "semistandard": "14.2.0"
   }
 }
