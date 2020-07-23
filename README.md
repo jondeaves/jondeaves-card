@@ -1,6 +1,6 @@
 # Jon Deaves
 
-A Scottish developer focusing on the web.
+I make things. Usually with code.
 
 ## Usage
 
