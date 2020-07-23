@@ -7,8 +7,8 @@
     "jondeaves": "./bin/card.js"
   },
   "files": [
-    "./bin/card.js",
-    "./bin/output",
+    "bin/card.js",
+    "bin/output",
     "package.json",
     "CHANGELOG.md"
   ],
