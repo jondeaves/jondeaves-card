@@ -6,12 +6,18 @@
   "bin": {
     "jondeaves": "./bin/card.js"
   },
+  "files": [
+    "./bin/card.js",
+    "./bin/output",
+    "package.json",
+    "CHANGELOG.md"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/jondeaves/jondeaves-card.git"
   },
   "scripts": {
-    "prepublish": "npm run build",
+    "prepare": "npm run build",
     "build": "node build.js",
     "dev": "npm run build && node ./bin/card.js",
     "test": "semistandard",
@@ -27,13 +33,16 @@
   ],
   "author": "Jon Deaves <hello@jondeaves.me> (https://jondeaves.me)",
   "license": "MIT",
-  "files": [
-    "bin/card.js",
-    "bin/output"
-  ],
   "devDependencies": {
+    "@semantic-release/changelog": "~5.0.1",
+    "@semantic-release/commit-analyzer": "~8.0.1",
+    "@semantic-release/git": "~9.0.0",
+    "@semantic-release/github": "~7.0.7",
+    "@semantic-release/npm": "~7.0.5",
+    "@semantic-release/release-notes-generator": "~9.0.1",
     "boxen": "^4.2.0",
     "chalk": "^4.1.0",
+    "semantic-release": "^17.1.1",
     "semistandard": "14.2.0"
   }
 }

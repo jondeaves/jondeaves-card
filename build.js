@@ -13,16 +13,19 @@ const options = {
   borderStyle: 'round'
 };
 
-const username = 'jondeaves';
+const username = chalk.cyan('jondeaves');
+const name = 'Jon Deaves';
+const role = chalk.red('Senior Software Engineer');
+const employer = chalk.blue('FanDuel');
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white('               Jon Deaves'),
-  handle: chalk.white(username),
-  work: chalk.white(`Senior Software Engineer at ${chalk.blue('FanDuel')}`),
-  npm: chalk.gray('https://npmjs.com/') + chalk.green(`~${username}`),
-  github: chalk.gray('https://github.com/') + chalk.green(username),
-  linkedin: chalk.gray('https://linkedin.com/in/') + chalk.green(username),
+  name: chalk.white(`               ${name}`),
+  handle: chalk.green(username),
+  work: chalk.white(`${role} at ${employer}`),
+  npm: chalk.gray('https://npmjs.com/') + `~${username}`,
+  github: chalk.gray('https://github.com/') + username,
+  linkedin: chalk.gray('https://linkedin.com/in/') + username,
   web: chalk.cyan('https://jondeaves.me/'),
   npx: chalk.white(`npx ${username}`),
 
