@@ -1,3 +1,10 @@
+## [1.1.1](https://github.com/jondeaves/jondeaves-card/compare/v1.1.0...v1.1.1) (2020-07-23)
+
+
+### Bug Fixes
+
+* updated config options ([5a69593](https://github.com/jondeaves/jondeaves-card/commit/5a695939e48dd7c6b78aecea46becd969c6e2595))
+
 # [1.1.0](https://github.com/jondeaves/jondeaves-card/compare/v1.0.1...v1.1.0) (2020-07-23)
 
 
