@@ -1,3 +1,10 @@
+## [1.1.2](https://github.com/jondeaves/jondeaves-card/compare/v1.1.1...v1.1.2) (2020-07-24)
+
+
+### Bug Fixes
+
+* downgrade package versions ([c32c336](https://github.com/jondeaves/jondeaves-card/commit/c32c336a84eab6f979569608ae1240a955c17dbb))
+
 ## [1.1.1](https://github.com/jondeaves/jondeaves-card/compare/v1.1.0...v1.1.1) (2020-07-23)
 
 
