@@ -15,8 +15,8 @@ const options = {
 
 const username = chalk.cyan('jondeaves');
 const name = 'Jon Deaves';
-const role = chalk.red('Senior Software Engineer');
-const employer = chalk.blue('FanDuel');
+const role = chalk.red('Software Engineer');
+const employer = chalk.hex('#4353FF')('Webflow');
 
 // Text + chalk definitions
 const data = {
