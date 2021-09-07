@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/jondeaves/jondeaves-card/compare/v1.1.2...v1.2.0) (2021-09-07)
+
+
+### Features
+
+* updated job ([1e5ee94](https://github.com/jondeaves/jondeaves-card/commit/1e5ee9474f8516afc29873708f5a619a18d7c436))
+
 ## [1.1.2](https://github.com/jondeaves/jondeaves-card/compare/v1.1.1...v1.1.2) (2020-07-24)
 
 
