@@ -42,7 +42,7 @@
     "@semantic-release/release-notes-generator": "~9.0.1",
     "boxen": "3.0.0",
     "chalk": "3.0.0",
-    "semantic-release": "^17.1.1",
+    "semantic-release": "^19.0.3",
     "semistandard": "14.2.0"
   }
 }
