@@ -8,21 +8,20 @@ import path from 'path';
 
 // Define options for Boxen
 const options = {
-  backgroundColor: '#ffffff',
-  borderStyle: 'none',
+  borderStyle: 'round',
   padding: 1,
   margin: 1,
   textAlign: 'center'
 };
 
 const name = chalk.rgb(255, 144, 0).bold('Jon Deaves'.toUpperCase());
-const role = chalk.rgb(51, 49, 50).visible('Web Developer');
+const role = 'Web Developer';
 
 const username = 'jondeaves';
-const npmLink = chalk.rgb(51, 49, 50).visible(`https://npmjs.com/~${username}`);
-const githubLink = chalk.rgb(51, 49, 50).visible(`https://github.com/${username}`);
-const linkedinLink = chalk.rgb(51, 49, 50).visible(`https://linkedin.com/in/${username}`);
-const webLink = chalk.rgb(51, 49, 50).visible(`https://${username}.me`);
+const npmLink = `https://npmjs.com/~${username}`;
+const githubLink = `https://github.com/${username}`;
+const linkedinLink = `https://linkedin.com/in/${username}`;
+const webLink = `https://${username}.me`;
 
 // Text + chalk definitions
 const data = {
