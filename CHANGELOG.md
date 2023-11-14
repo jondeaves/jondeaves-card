@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/jondeaves/jondeaves-card/compare/v1.3.0...v1.4.0) (2023-11-14)
+
+
+### Features
+
+* remove background colour ([4223998](https://github.com/jondeaves/jondeaves-card/commit/42239987c7368cd13d7b770c8181022deec9c165))
+
 # [1.3.0](https://github.com/jondeaves/jondeaves-card/compare/v1.2.0...v1.3.0) (2023-11-14)
 
 
