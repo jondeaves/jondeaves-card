@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/jondeaves/jondeaves-card/compare/v1.2.0...v1.3.0) (2023-11-14)
+
+
+### Features
+
+* update layout of card ([bc95707](https://github.com/jondeaves/jondeaves-card/commit/bc9570767f5ba30b9a9ecc60110a65118466403e))
+
 # [1.2.0](https://github.com/jondeaves/jondeaves-card/compare/v1.1.2...v1.2.0) (2021-09-07)
 
 
