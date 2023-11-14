@@ -1,71 +1,64 @@
 'use strict';
 
 // Pull in our modules
-const chalk = require('chalk');
-const boxen = require('boxen');
-const fs = require('fs');
-const path = require('path');
+import chalk from 'chalk';
+import boxen from 'boxen';
+import fs from 'fs';
+import path from 'path';
 
 // Define options for Boxen
 const options = {
+  backgroundColor: '#ffffff',
+  borderStyle: 'none',
   padding: 1,
   margin: 1,
-  borderStyle: 'round'
+  textAlign: 'center'
 };
 
-const username = chalk.cyan('jondeaves');
-const name = 'Jon Deaves';
-const role = chalk.red('Software Engineer');
-const employer = chalk.hex('#4353FF')('Webflow');
+const name = chalk.rgb(255, 144, 0).bold('Jon Deaves'.toUpperCase());
+const role = chalk.rgb(51, 49, 50).visible('Web Developer');
+
+const username = 'jondeaves';
+const npmLink = chalk.rgb(51, 49, 50).visible(`https://npmjs.com/~${username}`);
+const githubLink = chalk.rgb(51, 49, 50).visible(`https://github.com/${username}`);
+const linkedinLink = chalk.rgb(51, 49, 50).visible(`https://linkedin.com/in/${username}`);
+const webLink = chalk.rgb(51, 49, 50).visible(`https://${username}.me`);
 
 // Text + chalk definitions
 const data = {
-  name: chalk.white(`               ${name}`),
-  handle: chalk.green(username),
-  work: chalk.white(`${role} at ${employer}`),
-  npm: chalk.gray('https://npmjs.com/') + `~${username}`,
-  github: chalk.gray('https://github.com/') + username,
-  linkedin: chalk.gray('https://linkedin.com/in/') + username,
-  web: chalk.cyan('https://jondeaves.me/'),
-  npx: chalk.white(`npx ${username}`),
-
-  labelWork: chalk.white.bold('       Work:'),
-  labelnpm: chalk.white.bold('        npm:'),
-  labelGitHub: chalk.white.bold('     GitHub:'),
-  labelLinkedIn: chalk.white.bold('   LinkedIn:'),
-  labelWeb: chalk.white.bold('        Web:'),
-  labelCard: chalk.white.bold('       Card:')
+  name: `           ${name}`,
+  title: `          ${role}`,
+  npm: npmLink,
+  github: githubLink,
+  linkedin: linkedinLink,
+  web: webLink
 };
 
 // Actual strings we're going to output
 const newline = '\n';
-const heading = `${data.name} / ${data.handle}`;
-const working = `${data.labelWork}  ${data.work}`;
-const npming = `${data.labelnpm}  ${data.npm}`;
-const githubing = `${data.labelGitHub}  ${data.github}`;
-const linkedining = `${data.labelLinkedIn}  ${data.linkedin}`;
-const webing = `${data.labelWeb}  ${data.web}`;
-const carding = `${data.labelCard}  ${data.npx}`;
+const heading = `${data.name}`;
+const working = `${data.title}`;
+const npming = `  ${data.npm}`;
+const githubing = `  ${data.github}`;
+const linkedining = `${data.linkedin}`;
+const webing = `     ${data.web}`;
 
 // Put all our output together into a single variable so we can use boxen effectively
 const output =
   heading + // data.name + data.handle
   newline +
-  newline + // Add one whole blank line
   working +
-  newline + // data.labelWork + data.work
-  npming +
-  newline + // data.labelnpm + data.npm
-  githubing +
-  newline + // data.labelGitHub + data.github
-  linkedining +
-  newline + // data.labelLinkedIn + data.linkedin
-  webing +
+  newline + // Add one whole blank line
   newline +
-  newline + // data.labelWeb + data.web
-  carding; // data.labelCard + data.npx
+  npming +
+  newline + //
+  githubing +
+  newline +
+  linkedining +
+  newline +
+  webing;
 
 fs.writeFileSync(
-  path.join(__dirname, 'bin/output'),
-  chalk.green(boxen(output, options))
+  path.join('./bin/output'),
+  boxen(output, options)
 );
